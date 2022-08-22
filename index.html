@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+    <script src="https://kit.fontawesome.com/436c7751c8.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class='content'>
+          <div class="logo">
+            <img src="Images\TEDx_logo_k_RGB__290.jpg" />
+          </div>
+          <div class="image"></div>
+          <div class="text">
+          TEDxSRMIST <br> Ideas Worth Spreading
+        </div>
+        </div>
+
+      <form id="form">
+
+        <div class="social">
+          <div class="title">Get Started</div>
+          <div class="question">
+            Already have an account? <br/>
+            <span>Sign In</span>
+          </div>
+          <div class="btn">
+              <img src="https://img.icons8.com/color/30/000000/google-logo.png" />
+              Sign Up
+          </div>
+        </div>
+          <div class="or">or</div>
+
+        <!-- username input field -->
+
+        <div>
+          <label for="username">Username*</label>
+          <i class="fa-solid fa-user"></i>
+          <input type="text" name="username" id="username" placeholder="John Doe">
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <i class="fa-solid fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- email input field -->
+
+        <div>
+          <label for="email">Email*</label>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="text" name="email" id="email" placeholder="abc@srmist.edu.in">
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <i class="fa-solid fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- password input field -->
+
+        <div>
+          <label for="password">Password*</label>
+          <i class="fa-solid fa-lock"></i>
+          <input type="text" name="password" id="password" placeholder="">
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <i class="fa-solid fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- submit button -->
+
+        <button type="submit" id="submit">Submit</button>
+
+
+      </form>
+
+
+    </div>
+
+  </body>
+
+  <script src="main.js"></script>
+
+</html>
