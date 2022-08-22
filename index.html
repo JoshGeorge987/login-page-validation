@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABEQERAAAAEAEAAQAQAAAQAREBABAAABABAAEAEAABEQERAREBAQAAAAAAAAAQAAAAAAAAAQH//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AADYjwAA27cAANi3AADbtwAAiIoAAP/9AAD/+gAA" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>login page</title>
+    <script src="https://kit.fontawesome.com/436c7751c8.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class='content'>
+          <div class="logo">
+            <img src="Images\TEDx_logo_k_RGB__290.jpg" />
+          </div>
+          <div class="image"></div>
+          <div class="text">
+          TEDxSRMIST <br> Ideas Worth Spreading
+        </div>
+        </div>
+
+      <form id="form">
+
+        <div class="social">
+          <div class="title">Get Started</div>
+          <div class="question">
+            Already have an account? <br/>
+          </div>
+          <div id="g_id_onload"
+         data-client_id="882154349085-68j6gi7vp7530ru8lkc2143n9f70o10c.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse"></div>
+         <div class="g_id_signin" data-type="standard"></div>
+        </div>
+          <div class="or">or</div>
+
+        <!-- username input field -->
+
+        <div>
+          <label for="username">Username*</label>
+          <i class="fa-solid fa-user"></i>
+          <input type="text" name="username" id="username" placeholder="John Doe">
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <i class="fa-solid fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- email input field -->
+
+        <div>
+          <label for="email">Email*</label>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="text" name="email" id="email" placeholder="abc@srmist.edu.in">
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <i class="fa-solid fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- password input field -->
+
+        <div>
+          <label for="password">Password*</label>
+          <i class="fa-solid fa-lock"></i>
+          <input type="text" name="password" id="password" placeholder="">
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <i class="fa-solid fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- submit button -->
+
+        <button type="submit" id="submit">Sign Up</button>
+
+      </form>
+
+
+    </div>
+
+  </body>
+
+  <script src="main.js"></script>
+
+</html>
